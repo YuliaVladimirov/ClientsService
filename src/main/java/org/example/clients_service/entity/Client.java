@@ -8,7 +8,7 @@ import lombok.Setter;
 
 
 @Entity
-@Table(name = "users")
+@Table(name = "clients")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -20,8 +20,11 @@ public class Client {
     @Column(name = "user_id")
     private Long userId;
 
-    @Column(name = "name")
+    @Column(name = "first_name")
     private String name;
+
+    @Column(name = "last_name")
+    private String lastName;
 
     @Column(name = "email")
     private String email;
@@ -36,7 +39,13 @@ public class Client {
     @Column(name = "role")
     private Role role;
 
+    @Enumerated(EnumType.STRING)
+    @Column(name = "status")
+    private Status status;
+
     @Column(name = "refresh_token")
     private String refreshToken;
+
+
 
 }
