@@ -43,11 +43,18 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
+<!--		<dependency>-->
+<!--			&lt;!&ndash; MySQL Driver — JDBC Driver &ndash;&gt;-->
+<!--				<groupId>com.mysql</groupId>-->
+<!--				<artifactId>mysql-connector-j</artifactId>-->
+<!--				<version>9.1.0</version>-->
+<!--		</dependency>-->
+
 		<dependency>
-			<!-- MySQL Driver — JDBC Driver -->
-				<groupId>com.mysql</groupId>
-				<artifactId>mysql-connector-j</artifactId>
-				<version>9.1.0</version>
+			<!-- PostgreSQL JDBC Driver Postgresql -->
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 
 		<dependency>

@@ -1,0 +1,12 @@
+name: "clients_service"
+services:
+  clients-service-db:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: "p455W0Rd"
+      POSTGRES_DB: "clients_service"
+    volumes:
+      - "C:\\Users\\Julia Vladimirov\\Documents\\Java\\Projects\\PG-Data:/var/lib/postgresql/data"
+
